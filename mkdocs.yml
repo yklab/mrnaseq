@@ -1,0 +1,20 @@
+site_name: mRNA-seq™使用说明
+theme: readthedocs
+nav:
+  - mRNA-seq™平台: 'index.md'
+  - '模块': 'module.md'
+  - '工具': 'tools.md'
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - toc:
+      permalink: "#"
+
+
+plugins:
+  - search
+extra_css:
+  - stylesheets/extra.css
+
+
