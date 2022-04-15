@@ -1,9 +1,19 @@
 site_name: mRNA-seq™使用说明
-theme: readthedocs
+theme:
+  name: readthedocs
 nav:
-  - mRNA-seq™平台: 'index.md'
-  - '模块': 'module.md'
-  - '工具': 'tools.md'
+  - '主页':
+      - 'mRNA-seq™平台': 'index.md'
+  - '组成':
+    - '模块': 'module.md'
+    - '工具': 'tools.md'
+  - '工具':
+    - '差异基因分析': 'differential.md'
+    - '火山图工具': 'volcano.md'
+  - '使用':
+      - '分析流程': 'pipeline.md'
+      - 'FAQ': 'faq.md'
+      - '新颖': 'xy.md'
 markdown_extensions:
   - attr_list
   - md_in_html
