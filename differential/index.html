@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>模块 - mRNA-seq™使用说明</title>
+    <title>差异基因分析 - mRNA-seq™使用说明</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "\u6a21\u5757";
-        var mkdocs_page_input_path = "module.md";
+        var mkdocs_page_name = "\u5dee\u5f02\u57fa\u56e0\u5206\u6790";
+        var mkdocs_page_input_path = "differential.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -47,33 +47,27 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">组成</span></p>
-              <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">模块</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#_1">项目管理</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_2">图库</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#1">1.下载</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#2">2.对比查看</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#3">3.合并图片</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_3">基因集</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_4">分组</a>
-    </li>
-    </ul>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../module/">模块</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../tools/">工具</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">工具</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../differential/">差异基因分析</a>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">差异基因分析</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_2">数据选择</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">工具选择</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">选择参数</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_5">提交任务</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_6">查看结果</a>
+    </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../volcano/">火山图工具</a>
                   </li>
@@ -101,7 +95,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-          <li>组成 &raquo;</li><li>模块</li>
+          <li>工具 &raquo;</li><li>差异基因分析</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -111,52 +105,59 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="mrna-seqtm">mRNA-seq™ 分析系统<a class="headerlink" href="#mrna-seqtm" title="Permanent link">#</a></h1>
-<h3 id="_1">项目管理<a class="headerlink" href="#_1" title="Permanent link">#</a></h3>
-<p>项目管理模块，一个账号可以导入多个独立项目。可以在项目管理界面随意切换项目。  </p>
-<p><img alt="Result4" src="../img/project.png" /></p>
-<h3 id="_2">图库<a class="headerlink" href="#_2" title="Permanent link">#</a></h3>
-<p>保存各个任务产生的结果，提供下载、合并下载、比较等功能。
-<img alt="Result4" src="../img/tuku1.png" /></p>
-<h4 id="1">1.下载<a class="headerlink" href="#1" title="Permanent link">#</a></h4>
-<p><img alt="Result4" src="../img/xz.png" /></p>
-<div class="admonition tip">
-<p class="admonition-title">提示</p>
-<p>支持批量下载，选中要下载的图片进行批量下载，下载文件均为SVG矢量图</p>
+                <h1 id="_1">差异基因分析<a class="headerlink" href="#_1" title="Permanent link">#</a></h1>
+<p>差异基因分析
+<img alt="Result1" src="../img/%E5%B7%AE%E5%BC%82%E5%9F%BA%E5%9B%A0.png" />  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>自定义选择分组、软件、参数进行差异基因分析。</p>
 </div>
-<h4 id="2">2.对比查看<a class="headerlink" href="#2" title="Permanent link">#</a></h4>
-<p><img alt="Result4" src="../img/dbck.png" /></p>
-<div class="admonition tip">
-<p class="admonition-title">提示</p>
-<p>选择多个图片进行查看</p>
+<h3 id="_2">数据选择<a class="headerlink" href="#_2" title="Permanent link">#</a></h3>
+<p><img alt="Result4" src="../img/syxz.png" /> </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>首页，或者任务任何选着工具的地方，都可以调出差异基因工具</p>
 </div>
-<h4 id="3">3.合并图片<a class="headerlink" href="#3" title="Permanent link">#</a></h4>
-<p><img alt="Result4" src="../img/hb.png" /></p>
-<div class="admonition tip">
-<p class="admonition-title">提示</p>
-<p>合并图片选择2个或者多个图片进行合并，合并成功之后进行下载、查看</p>
+<h3 id="_3">工具选择<a class="headerlink" href="#_3" title="Permanent link">#</a></h3>
+<p><img alt="Result4" src="../img/cyjy.png" /> </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>选择差异基因工具</p>
 </div>
-<h3 id="_3">基因集<a class="headerlink" href="#_3" title="Permanent link">#</a></h3>
-<p>通过筛选、差异基因等方法可以保存基因集进行，查看、留存、以及再调工具。基因集模块可以查看不同基因集的交、并、差等集合，并以韦恩图的形势展示、下载。</p>
-<p><img alt="Result4" src="../img/genej.png" /></p>
-<div class="admonition tip">
-<p class="admonition-title">提示</p>
-<p>每个数据表格均有可以保存基因集的按钮。都可以存储所筛选的基因集。</p>
+<h3 id="_4">选择参数<a class="headerlink" href="#_4" title="Permanent link">#</a></h3>
+<p><img alt="Result4" src="../img/cyjy2.png" /> </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>选择相应的参数，比如分组，foldchange Qvalue等。差异基因工具嵌套了不同的软件和算法，包括 <code>DESeq2</code>、<code>edgeR</code>、<code>DEseq</code>等，也可以在无重复样本情况下进行分析。</p>
 </div>
-<h3 id="_4">分组<a class="headerlink" href="#_4" title="Permanent link">#</a></h3>
-<p>通过自定义分组实现再差异基因分析、聚类分析等工具中进行灵活选择参数。
-通过筛选、差异基因等方法可以保存基因集进行，查看、留存、以及再调工具。基因集模块可以查看不同基因集的交、并、差等集合，并以韦恩图的形势展示、下载。</p>
-<p><img alt="Result4" src="../img/fz.png" /></p>
+<h3 id="_5">提交任务<a class="headerlink" href="#_5" title="Permanent link">#</a></h3>
+<p><img alt="Result4" src="../img/cyjy3.png" /> </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>进入任务列表，会显示相应提交的任务信息，等任务完成之后可以进行结果查看。</p>
+</div>
+<h3 id="_6">查看结果<a class="headerlink" href="#_6" title="Permanent link">#</a></h3>
+<p><img alt="Result4" src="../img/cyjy4.png" /> </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>差异基因工具会产生图标格式，左边一个📊 进行统计<code>上调</code>，<code>下调</code>结果统计，右边为差异结果基因。
+其实左边图片可以进行颜色、参数、和对应标题设置。右边表格可以进行<code>筛选</code>。如：<code>匹配相应基因</code>、<code>查看p-value</code>、<code>Q-value</code>、<code>log2FC</code>等。
+差异结果基因也可以调出任务工具进行相应的<code>KEGG</code>、<code>GSEA</code>、<code>火山图</code>等使用。</p>
+</div>
 <div class="admonition tip">
-<p class="admonition-title">提示</p>
-<p>自定义分组，可以剔除聚类或者测序不好的数据，进行再差异基因分析、等各个工具使用。具体选项参照工具列表。</p>
+<p class="admonition-title">使用技巧</p>
+<ul>
+<li>差异基因结果表格可以保存基因集，保存的基因集可以多次快速调度相应的工具。</li>
+<li>差异基因结果图可以临时更改 Q-value的值进行临时调差异基因的多少。</li>
+<li>差异基因结果图可以临时标题、颜色、值大小进行 图库保存。可在图库里面进行查看、下载、合并图片。</li>
+</ul>
 </div>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href=".." class="btn btn-neutral float-left" title="mRNA-seq™平台"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../tools/" class="btn btn-neutral float-right" title="工具">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../tools/" class="btn btn-neutral float-left" title="工具"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../volcano/" class="btn btn-neutral float-right" title="火山图工具">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -179,10 +180,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../tools/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../tools/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../volcano/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
